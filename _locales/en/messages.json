@@ -14,6 +14,16 @@
 		"description": "Title of the action button"
 	},
   
+	"noCaptureNotificationTitle": {
+		"message": "No Capture",
+		"description": "Notification title when tab can't be captured"
+	},
+	
+	"noCaptureNotificationMessage": {
+		"message": "This page can't be captured with current CapturePage's options. Maybe with tabs.captureTab()...",
+		"description": "Notification message when tab can't be captured"
+	},
+	
 	"menuLaunch": {
 		"message": "Capture this tab",
 		"description": "Context Menu Title for capture a tab"
