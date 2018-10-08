@@ -29,6 +29,7 @@ var regexSpace = / /g;
 var regexSpeChar = /[\.\*\+\\\?\^\$\{\}\|\[\]\/'":]/g;
 var regexAllSpeChar = /[^A-Z^a-z^0-9^ ]/g;
 
+var noCaptureNotification = "noCapture-notification"
 
 //------------------------Functions-------------------------------------
 
@@ -39,6 +40,15 @@ getActiveTab()
 */
 function onError(error) {
 	console.error(`Error: ${error}`);
+	
+	// Notification when the capture doesn't work (most cases involve a non accessible web page)
+	if (error == "Error: Could not establish connection. Receiving end does not exist."){
+		browser.notifications.create(noCaptureNotification, {
+    			"type": "basic",
+    			"title": browser.i18n.getMessage("noCaptureNotificationTitle"),
+    			"message": browser.i18n.getMessage("noCaptureNotificationMessage")
+  		});
+	}
 }
 
 // Called when an context menu's item has been created, or when creation failed due to an error
