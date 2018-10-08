@@ -1,0 +1,233 @@
+{
+	"extensionName": {
+		"message": "CapturePage",
+		"description": "Name of the extension."
+	},
+
+	"extensionDescription": {
+		"message": "Permet de télécharger l'onglet actif en format png ou jpeg. Plusieurs options sont disponibles (nom du fichier, dossier de téléchargement, qualité de l'image...)",
+		"description": "Description of the extension."
+	},
+
+	"extensionActionTitle": {
+		"message": "Capturer",
+		"description": "Title of the action button"
+	},
+  
+	"menuLaunch": {
+		"message": "Capturer cette page",
+		"description": "Context Menu Title for capture a tab"
+	},
+
+	"menuOpenOption": {
+		"message": "Options de CapturePage",
+		"description": "Context Menu Title for going to the add-on's options"
+	},
+
+	"folderChoiceTitle": {
+		"message": "Dossier cible pour le téléchargement (chemin relatif au dossier Téléchargements)",
+		"description": "Description for the folder choice's option"
+	},
+	
+	"folderPrecisions": {
+		"message": "Si le nom indique un dossier qui n'existe pas, il sera automatiquement créé. Si vous voulez créer des sous-dossiers ou y mettre le fichier, il suffit d'utiliser des \"/\" comme pour un chemin d'accès. Attention ne pas mettre d'espace ou  caractères spéciaux devant ou derrière sinon ils seront supprimés",
+		"description": "Explanation on the folder choice"
+	},
+	
+	"patternChoiceTitle": {
+		"message": "Modèle pour le nom du fichier",
+		"description": "Description for the filename choice's option"
+	},
+	
+	"patternPrecisions": {
+		"message": "Attention certains caractères spéciaux seront enlevés et si le nom du fichier est trop long le téléchargment échouera",
+		"description": "Explanation on the pattern choice"
+	},
+	
+	"patternExampleTitle": {
+		"message": "Interprétation du modèle : ",
+		"description": "Introduction to the filename's example"
+	},
+	
+	"tdTitle": {
+		"message": "%t - titre de la page",
+		"description": "%t's interpretation"
+	},
+	
+	"tdYear": {
+		"message": "%Y/%y - année",
+		"description": "%Y/%y's interpretation"
+	},
+	
+	"tdHour": {
+		"message": "%h - heure",
+		"description": "%h's interpretation"
+	},
+	
+	"tdURL": {
+		"message": "%u - URL de la page",
+		"description": "%u's interpretation"
+	},
+	
+	"tdMonth": {
+		"message": "%M - mois",
+		"description": "%M's interpretation"
+	},
+	
+	"tdMinute": {
+		"message": "%m - minute",
+		"description": "%m's interpretation"
+	},
+	
+	"tdDay": {
+		"message": "%J - jour",
+		"description": "%J's interpretation"
+	},
+	
+	"tdSecond": {
+		"message": "%s - seconde",
+		"description": "%s's interpretation"
+	},
+	
+	"captureTypeTitle": {
+		"message": "Type de Capture : ",
+		"description": "Description for the capture type choice's option"
+	},
+	
+	"labelFullPage": {
+		"message": "page complète",
+		"description": "FullPage's capture choice"
+	},
+	
+	"labelVisiblePart": {
+		"message": "seulement la partie visible de la page",
+		"description": "Visible part's capture choice"
+	},
+	
+	"labelWithTabsAPI": {
+		"message": "avec tabs.captureTab()",
+		"description": "Tabs API's capture choice"
+	},
+	
+	"precisionsWithTabsAPI": {
+		"message": "La fonction tabs.captureTab() de l'API Tab permet de capturer certaines pages non capturable autrement (mais seulement la partie visible et en couleur)",
+		"description": "Explanation on the Tabs API's capture choice"
+	},
+	
+	"formatTitle": {
+		"message": "Format : ",
+		"description": "Description for the format choice's option"
+	},
+	
+	"labelPng": {
+		"message": "PNG",
+		"description": "PNG's format choice"
+	},
+	
+	"labelJpeg": {
+		"message": "JPEG (possibilité de faire varier la qualité de l'image)",
+		"description": "JPEG's format choice"
+	},
+	
+	"qualityImage": {
+		"message": "Qualité de l'image (seulement valable pour le format JPEG) : ",
+		"description": "Description for the quality choice's option"
+	},
+
+	"labelColoring": {
+		"message": "Coloration : ",
+		"description": "Description for the coloring choice's option"
+	},
+	
+	"labelIn_colour": {
+		"message": "en couleur",
+		"description": "Colour's coloring choice"
+	},
+	
+	"labelGrayscale": {
+		"message": "en niveau de gris",
+		"description": "Grayscale's coloring choice"
+	},
+	
+	"checkBoxSpaceTitle": {
+		"message": "Remplacer les espaces du nom de fichier par des \"_\"",
+		"description": "Description for the spaces choice's option"
+	},
+	
+	"checkBoxAllSpecialsTitle": {
+		"message": "Remplacer tous les caractères spéciaux du nom de fichier par des \"-\"",
+		"description": "Description for the specials characters choice's option"
+	},
+	
+	"submitButton": {
+		"message": "Sauvegarder les paramètres",
+		"description": "Text for the submit button"
+	},
+	
+	"defaultFolderAlert": {
+		"message": "directement dans le dossier des téléchargements",
+		"description": "Text for the submit button"
+	},
+	
+	"defaultFileNameAlert": {
+		"message": "CapturePage (nom du fichier par défaut)",
+		"description": "Text for the submit button"
+	},
+	
+	"yesAlert": {
+		"message": "oui",
+		"description": "Yes"
+	},
+	
+	"noAlert": {
+		"message": "non",
+		"description": "No"
+	},
+	
+	"titleExampleText": {
+		"message": "\"Un titre de page\"",
+		"description": "Yes"
+	},
+	
+	"uRLExampleText": {
+		"message": "\"Une URL de page\"",
+		"description": "No"
+	},
+	
+	"alertColourTabsAPI": {
+		"message": "en couleur (niveau de gris non disponible pour ce type de capture)",
+		"description": "Alert for coloring when Capture with Tabs API chosen"
+	},
+	
+	"alertQualityImagePNG": {
+		"message": "ne peut pas être choisie en format png",
+		"description": "Alert for image quality when format PNG chosen"
+	},
+	
+	"alertSave": {
+		"message": "Sauvegarde effectuée",
+		"description": "Alert for saving parameter text"
+	},
+	
+	
+	"alertQualityImageTitle": {
+		"message": "Qualité de l'image : ",
+		"description": "Alert text for image quality presentation"
+	},
+	
+	"alertFolderChoiceTitle": {
+		"message": "Dossier cible : ",
+		"description": "Alert text for folder choice presentation"
+	},
+	
+	"alertPatternChoiceTitle": {
+		"message": "Modèle pour le nom du fichier : ",
+		"description": "Alert text for pattern choice presentation"
+	},
+	
+	"checkBoxAlertSavedParameterTitle": {
+		"message": "Afficher à chaque sauvegarde une fenêtre pour résumer les options choisies ",
+		"description": "Description for the Alert Saved Parameters choice's option"
+	}
+
+}

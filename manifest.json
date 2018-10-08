@@ -1,0 +1,49 @@
+{
+	"manifest_version": 2,
+	"name": "__MSG_extensionName__",
+	"version": "1.0",
+	"default_locale": "en",
+	"description": "__MSG_extensionDescription__",
+  
+	"applications": {
+		"gecko": {
+			"id": "capturePage@example.com"
+		}
+	},
+	
+	"icons": {
+		"32" : "icons/shutter-32.png",
+		"48": "icons/shutter-48.png",
+		"96": "icons/shutter-96.png"
+	},
+
+	"browser_action": {
+		"default_icon": "icons/shutter-32.png",
+		"default_title": "__MSG_extensionActionTitle__"
+	},
+
+	"permissions": [
+		"tabs",
+		"downloads",
+		"storage",
+		"menus",
+		"<all_urls>"
+	],
+  
+	"background": {
+		"scripts": ["storage.js", 
+					"background-script.js"]
+	},
+  
+	"options_ui": {
+		"page": "options/options.html",
+		"browser_style": true
+	},
+	  
+	"content_scripts": [
+		{"matches": 
+			["<all_urls>"],
+			"js": ["content-script.js"]
+		}
+	]
+}

@@ -1,0 +1,21 @@
+.title {
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.check{
+	font-size: 12pt;
+}
+
+.precisions {
+	font-size: 10pt;
+}
+
+#legendeModele {
+	width:65%;
+}
+
+#idPatternExample {
+	font-weight: normal;
+	font-style: italic;
+}

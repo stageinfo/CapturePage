@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="options.css" />
+	</head>
+  
+	<body>
+	
+		<form id="form">
+		
+			<label class="title" id="idFolderChoiceTitle">
+			</label><br/>
+			<div class = "precisions" id="idFolderPrecisions"></div><br/>
+			<input type="text" id="idFolderChoice" size="50"/>
+		
+			<br/><br/>
+			
+			<label class="title" id="idPatternChoiceTitle" for="idPatternChoice">
+			</label><br/>
+			<div class = "precisions" id="idPatternPrecisions"></div><br/>
+			<input type="text" id="idPatternChoice" size="70"/>
+			
+			<br/>
+			
+			<div id ="idPatternExample">
+			<label id="idPatternExampleTitle"></label>
+			<label id="idPatternExampleExample"></label>
+			</div>
+			
+			<br/>
+			
+			<table id="idPatternKey">
+				
+				<tbody>
+					<tr>
+						<td id="idTdTitle"></td>
+						<td id="idTdYear"></td>
+						<td id="idTdHour"></td>
+					</tr>
+				
+					<tr>
+						<td id="idTdURL"></td>
+						<td id="idTdMonth"></td>
+						<td id="idTdMinute"></td>
+					</tr>
+				
+					<tr>
+						<td></td>
+						<td id="idTdDay"></td>
+						<td id="idTdSecond"></td>
+					</tr>
+					
+				</tbody>
+				
+			</table>
+		
+			<br/>
+			
+			<label class="title" id="idCaptureType" for="captureType">
+			</label><br/>
+			
+				<input type="radio" name="captureType" value="fullPage" id="idFullPage"/>
+				<label id="idLabelFullPage" for="idFullPage"></label><br/>
+				
+				<input type="radio" name="captureType" value="visiblePart" id="idVisiblePart" />
+				<label id="idLabelVisiblePart" for="idVisiblePart"></label><br/>
+				
+				<input type="radio" name="captureType" value="withTabsAPI" id="idAPICapture" />
+				<label id="idLabelWithTabsAPI" for="idAPICapture"></label><br/>
+			
+				<div class = "precisions" id="idPrecisionsWithTabsAPI"></div> 
+				
+			<br/>
+			
+			<label class="title" id="idFormat" for="format"></label><br/>
+			
+				<input type="radio" name="format" value="png" id="idPng" />
+				<label id="idLabelPng" for="idPng"></label><br/>
+				
+				<input type="radio" name="format" value="jpeg" id="idJpeg" />
+				<label id="idLabelJpeg" for="idJpeg"></label><br/>
+			
+			<br/>
+			
+			<div id="divQualityImage">
+				<label class="title" id="idQualityImage" for="qualityImage"></label>
+					<select id="qualityImage">
+						<option value="10"> 10 % </option>
+						<option value="20"> 20 % </option>
+						<option value="30"> 30 % </option>
+						<option value="40"> 40 % </option>
+						<option value="50"> 50 % </option>
+						<option value="60"> 60 % </option>
+						<option value="70"> 70 % </option>
+						<option value="80"> 80 % </option>
+						<option value="90"> 90 % </option>
+						<option value="100"> 100 % </option>
+					</select>
+			</div>
+			
+			<br />
+			
+			<div id="divColoring">
+				<label class="title" id="idColoring" for="coloring">
+				</label><br/>
+					<input type="radio" name="coloring" value="in_colour" id="idColourChoice">
+					<label id="idLabelIn_colour" for="idColourChoice">
+					</label><br/>
+					
+					<input type="radio" name="coloring" value="grayscale" id="idGrayScaleChoice" />
+					<label id="idLabelGrayscale" for="idGrayScaleChoice">
+					</label><br/>
+			</div>
+			<br/>
+			 
+			<input type="checkbox" id="idCheckBoxSpace" value="noSpace"/>
+			<label class="check" id="idCheckBoxSpaceTitle" for="idCheckBoxSpace"></label>
+			
+			<br/><br/>
+			
+			 
+			<input type="checkbox" id="idCheckBoxAllSpecials" value="removeAllSpecials"/>
+			<label class="check" id="idCheckBoxAllSpecialsTitle" for="idCheckBoxAllSpecials">
+			</label>
+			
+			<br/><br/>
+			
+			<input type="checkbox" id="idCheckBoxAlertSavedParameter" value="show"/>
+			<label class="check" id="idCheckBoxAlertSavedParameterTitle" for="idCheckBoxAlertSavedParameter">
+			</label>
+			
+			<br/><br/>
+			
+			<button id="idSubmitButton" type="submit"></button>
+			
+		</form>
+
+		<script src="options.js"></script>
+	
+	</body>
+
+</html>

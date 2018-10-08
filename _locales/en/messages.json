@@ -1,0 +1,234 @@
+{
+	"extensionName": {
+		"message": "CapturePage",
+		"description": "Name of the extension."
+	},
+
+	"extensionDescription": {
+		"message": "Capture the active tab and download it with options like format, quality, coloring, full page or not...",
+		"description": "Description of the extension."
+	},
+
+	"extensionActionTitle": {
+		"message": "Capture",
+		"description": "Title of the action button"
+	},
+  
+	"menuLaunch": {
+		"message": "Capture this tab",
+		"description": "Context Menu Title for capture a tab"
+	},
+
+	"menuOpenOption": {
+		"message": "Options menu",
+		"description": "Context Menu Title for going to the add-on's options"
+	},
+
+	"folderChoiceTitle": {
+		"message": "Folder where the file will be downloaded (relative path to the Downloads folder)",
+		"description": "Description for the folder choice's option"
+	},
+	
+	"folderPrecisions": {
+		"message": "If the name doesn't exist, a folder will be automatically created. If you want to create subfolder(s) or put the file in, you have to use \"/\" (as for a path). Be careful not to put spaces or special characters in front or behind them otherwise they will be removed",
+		"description": "Explanation on the folder choice"
+	},
+	
+	"patternChoiceTitle": {
+		"message": "FileName pattern",
+		"description": "Description for the filename choice's option"
+	},
+	
+	"patternPrecisions": {
+		"message": "Some specials characters will be removed and if the file name is too long the download will fail",
+		"description": "Explanation on the pattern choice"
+	},
+	
+	
+	"patternExampleTitle": {
+		"message": "pattern's interpretation : ",
+		"description": "Introduction to the filename's example"
+	},
+	
+	"tdTitle": {
+		"message": "%t - page's title",
+		"description": "%t's interpretation"
+	},
+	
+	"tdYear": {
+		"message": "%Y/%y - year",
+		"description": "%Y/%y's interpretation"
+	},
+	
+	"tdHour": {
+		"message": "%h - hour",
+		"description": "%h's interpretation"
+	},
+	
+	"tdURL": {
+		"message": "%u - page's URL",
+		"description": "%u's interpretation"
+	},
+	
+	"tdMonth": {
+		"message": "%M - month",
+		"description": "%M's interpretation"
+	},
+	
+	"tdMinute": {
+		"message": "%m - minute",
+		"description": "%m's interpretation"
+	},
+	
+	"tdDay": {
+		"message": "%J - day",
+		"description": "%J's interpretation"
+	},
+	
+	"tdSecond": {
+		"message": "%s - second",
+		"description": "%s's interpretation"
+	},
+	
+	"captureTypeTitle": {
+		"message": "Capture Type : ",
+		"description": "Description for the capture type choice's option"
+	},
+	
+	"labelFullPage": {
+		"message": "full page",
+		"description": "FullPage's capture choice"
+	},
+	
+	"labelVisiblePart": {
+		"message": "visible part",
+		"description": "Visible part's capture choice"
+	},
+	
+	"labelWithTabsAPI": {
+		"message": "with tabs.captureTab()",
+		"description": "Tabs API's capture choice"
+	},
+	
+	"precisionsWithTabsAPI": {
+		"message": "The tabs.captureTab() function allow to capture some web pages which can't be captured otherwise (but only the visible part and in colour)",
+		"description": "Explanation on the Tabs API's capture choice"
+	},
+	
+	"formatTitle": {
+		"message": "Format : ",
+		"description": "Description for the format choice's option"
+	},
+	
+	"labelPng": {
+		"message": "PNG",
+		"description": "PNG's format choice"
+	},
+	
+	"labelJpeg": {
+		"message": "JPEG (the image's quality can only be ajust with this format)",
+		"description": "JPEG's format choice"
+	},
+	
+	"qualityImage": {
+		"message": "Image's quality (only available for jpeg format) : ",
+		"description": "Description for the quality choice's option"
+	},
+
+	"labelColoring": {
+		"message": "Coloring : ",
+		"description": "Description for the coloring choice's option"
+	},
+	
+	"labelIn_colour": {
+		"message": "in colour",
+		"description": "Colour's coloring choice"
+	},
+	
+	"labelGrayscale": {
+		"message": "grayscale",
+		"description": "Grayscale's coloring choice"
+	},
+	
+	"checkBoxSpaceTitle": {
+		"message": "Replace spaces in filename by \"_\"",
+		"description": "Description for the spaces choice's option"
+	},
+	
+	"checkBoxAllSpecialsTitle": {
+		"message": "Replace all specials characters in filename by \"-\"",
+		"description": "Description for the specials characters choice's option"
+	},
+	
+	"submitButton": {
+		"message": "Save",
+		"description": "Text for the submit button"
+	},
+	
+	"defaultFolderAlert": {
+		"message": "directly to the Downloads's folder",
+		"description": "Text for the submit button"
+	},
+	
+	"defaultFileNameAlert": {
+		"message": "CapturePage (default filename)",
+		"description": "Text for the submit button"
+	},
+	
+	"yesAlert": {
+		"message": "yes",
+		"description": "Yes"
+	},
+	
+	"noAlert": {
+		"message": "no",
+		"description": "No"
+	},
+	
+	"titleExampleText": {
+		"message": "\"a page's title\"",
+		"description": "Yes"
+	},
+	
+	"uRLExampleText": {
+		"message": "\"a page's URL\"",
+		"description": "No"
+	},
+	
+	"alertColourTabsAPI": {
+		"message": "in colour (grayscale not available for this kind of capture)",
+		"description": "Alert for coloring when Capture with Tabs API chosen"
+	},
+	
+	"alertQualityImagePNG": {
+		"message": "can't be chosen for png format",
+		"description": "Alert for image quality when format PNG chosen"
+	},
+	
+	"alertSave": {
+		"message": "Options saved",
+		"description": "Alert for saving parameter text"
+	},
+	
+	
+	"alertQualityImageTitle": {
+		"message": "Image's quality : ",
+		"description": "Alert text for image quality presentation"
+	},
+	
+	"alertFolderChoiceTitle": {
+		"message": "To the folder : ",
+		"description": "Alert text for folder choice presentation"
+	},
+	
+	"alertPatternChoiceTitle": {
+		"message": "FileName pattern : ",
+		"description": "Alert text for pattern choice presentation"
+	},
+	
+	"checkBoxAlertSavedParameterTitle": {
+		"message": "Show a summary Alert of Saved Parameters",
+		"description": "Description for the Alert Saved Parameters choice's option"
+	}
+
+}
