@@ -3,7 +3,7 @@
 CapturePage is an add-on for Mozilla Firefox developed during a training session
 It allows user to capture the active tab and download it.
 
-Some options for the capture can be chosen in the extension's options :
+Some options for the capture can be chosen in the add-on's options :
 - Folder where the file will be downloaded (relative path to the Downloads folder)
 - File name 's pattern
 - Capture Type : full page / only the visible part / with the tabs.captureTab() API
