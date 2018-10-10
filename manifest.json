@@ -1,14 +1,15 @@
 {
 	"manifest_version": 2,
 	"name": "__MSG_extensionName__",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"default_locale": "en",
 	"description": "__MSG_extensionDescription__",
 	"author": "AnthonyLeborgne",
   
 	"applications": {
 		"gecko": {
-			"id": "capturePage@example.com"
+			"id": "capturePage@example.com",
+			"strict_min_version": "55.0"
 		}
 	},
 	
