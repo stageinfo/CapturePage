@@ -17,11 +17,11 @@ var tTop = 0;
 function createImageData() {
   
 	/* If the chosen capture type is the full page. 
-	 * Get the scrollHeight and scrollWidht pixel value of the document.body
+	 * Get the scrollHeight and scrollWidth pixel value of the document's root element 
 	 * */
 	if (captureTypeItemCS == "fullPage"){
-		tWidth = document.body.scrollWidth;
-		tHeight = document.body.scrollHeight;
+		tWidth = document.documentElement.scrollWidth;
+		tHeight = document.documentElement.scrollHeight;
 	}
   
 	// If the chosen capture type is only the visible part of the page
@@ -45,7 +45,11 @@ function createImageData() {
 	// Return a drawing context on the canvas
 	var ctx = canvas.getContext('2d');
 	
-	// Method of the Canvas 2D API to render a region of a window into the canvas.
+	/* Method of the Canvas 2D API to render a region of a window into the canvas.
+	 * This method is non-standard but I could not find an equivalent.
+	 * For more information see documentation on : 
+	 * https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawWindow
+	*/
 	ctx.drawWindow(window, tLeft, tTop, tWidth, tHeight, "rgb(255,255,255)");
 
 
