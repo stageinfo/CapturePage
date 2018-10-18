@@ -220,9 +220,6 @@ function storeSettings() {
 	var patternChoice = getPatternChoice();
 	patternChoice = patternChoice.replace(regexSpeChar,"");
 	
-	// Make sure file name begin with a letter or number
-	patternChoice = patternChoice.replace(/^[^A-Z^a-z^0-9]+/, "");
-	
 	// Check if there is at least a letter or a number in the pattern choice
 	if (!regexVerifName.test(patternChoice)){
 		patternChoice = "CapturePage";
@@ -292,6 +289,7 @@ function storeSettings() {
 			patternChoiceAlert = patternChoiceAlert.replace(regexTitle,browser.i18n.getMessage("titleExampleText"));
 			patternChoiceAlert = patternChoiceAlert.replace(regexURL,browser.i18n.getMessage("uRLExampleText"));
 			patternChoiceAlert = captureTime(patternChoiceAlert);
+			patternChoiceAlert = patternChoiceAlert.replace(/^[^A-Z^a-z^0-9]+/, "");
 		
 			// Replace all special characters remaining in the pattern choice if option chosen
 			if (specialCharaChoice == "removeAllSpecials"){
