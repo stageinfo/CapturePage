@@ -231,18 +231,8 @@ function storeSettings() {
 	var qualityImage = getQualityImage();
 	var spaceChoice = getSpaceChoice();
 	var specialCharaChoice = getSpecialCharaChoice();
-	var alertSavedParameter = getAlertSavedParameter();;
-
-	console.log(folderChoice);
-	console.log(patternChoice);
-	console.log(captureType);
-	console.log(coloring);
-	console.log(format);
-	console.log(qualityImage);
-	console.log(spaceChoice);
-	console.log(specialCharaChoice);
-	console.log(alertSavedParameter);
-
+	var alertSavedParameter = getAlertSavedParameter();
+	
 	// Store all the values in local storage
 	browser.storage.local.set({
 		folderChoice,
