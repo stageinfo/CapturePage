@@ -22,9 +22,7 @@ If not, then store the default settings.
 */
 function checkStoredSettings(storedSettings) {
   
-	if (!storedSettings.folderChoice || 
-		!storedSettings.patternChoice || 
-		!storedSettings.captureType || 
+	if (!storedSettings.captureType || 
 		!storedSettings.coloring || 
 		!storedSettings.format || 
 		!storedSettings.qualityImage || 
@@ -33,9 +31,7 @@ function checkStoredSettings(storedSettings) {
 		!storedSettings.alertSavedParameter){
 		
 		browser.storage.local.set(defaultSettings);
-		console.log("default");
 	}
-	else console.log("dejaFait");
 }
 
 // Getting Stored Setting
