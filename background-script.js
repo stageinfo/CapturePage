@@ -26,7 +26,7 @@ var regexMinute = /%m/g;
 var regexSecond = /%s/g;
 
 var regexSpace = / /g;
-var regexSpeChar = /[\.\*\+\\\?\^\$\{\}\|\[\]\/'":]/g;
+var regexSpeChar = /[\.\*\+\\\?\^\$\{\}\|\[\]\/\<\>'":]/g;
 var regexAllSpeChar = /[^A-Z^a-z^0-9^ ]/g;
 
 var noCaptureNotification = "noCapture-notification"
@@ -93,8 +93,6 @@ function regex(pattern){
 	pattern = pattern.replace(regexTitle,tabTitle);
 	pattern = pattern.replace(regexURL,tabUrl);
 	
-	
-	console.log("pattern= " + pattern);
 	// Check if file name has special characters and remove them
 	pattern = pattern.replace(regexSpeChar,"_");
 	// Make sure file name begin with a letter or number
@@ -163,23 +161,43 @@ function downloadPage(urlToDownload){
 	if (specialCharaChoiceItem == "removeAllSpecials"){
 		patternChoiceItem = patternChoiceItem.replace(regexAllSpeChar,"-");
 	}
-    // Replace all spaces in filename by "_" if option chosen
-    if (spaceChoiceItem == "noSpace"){
+    
+	// Replace all spaces in filename by "_" if option chosen
+    	if (spaceChoiceItem == "noSpace"){
 		patternChoiceItem = patternChoiceItem.replace(regexSpace,"_");
 	}
-   
+	
 	// For the download API if there is a folder choice. That allows to differentiate folder and file name
-    if (folderChoiceItem != ""){
-	folderChoiceItem = folderChoiceItem + "/";
-    }
-    
+	if (folderChoiceItem != ""){
+		folderChoiceItem = folderChoiceItem + "/";
+    	}
+    	
+	// Calculation of the FileName's size
+	var fileName = folderChoiceItem + patternChoiceItem;
+	var totalSize = fileName.length + formatItem.length + 1;
+
+	// Add arbitrary 40 characters to take into account the path before the download folder. It can not be known by the extension
+	var limitSize = totalSize + 40;
+
+	if (limitSize > 254){
+		
+		// Only the first 214 characters will be taken
+		fileName = fileName.slice(0,214);
+		
+		browser.notifications.create(noCaptureNotification2, {
+    		"type": "basic",
+    		"title": browser.i18n.getMessage("noCaptureNotificationTitle2"),
+    		"message": browser.i18n.getMessage("noCaptureNotificationMessage2")
+		});
+	}
+	
 	// Download the file with download() function of the downloads API
-    var dl = browser.downloads.download({
+    	var dl = browser.downloads.download({
 		url : urlToDownload,
 		filename : folderChoiceItem + patternChoiceItem + "." + formatItem,
 		conflictAction : 'uniquify'
-    });
-    dl.then(onStartedDownload, onFailed);
+    	});
+    	dl.then(onStartedDownload, onFailed);
 }
 
 // Convertion of the data URI to URL using a blob and the static method URL.createObjectURL()
