@@ -19,9 +19,19 @@
 		"description": "Notification title when tab can't be captured"
 	},
 	
+	"noCaptureNotificationTitle2": {
+		"message": "FileName too long",
+		"description": "Notification title when FileName is too long"
+	},
+	
 	"noCaptureNotificationMessage": {
 		"message": "This page can't be captured with current CapturePage's options. Maybe with tabs.captureTab()...",
-		"description": "Notification message when tab can't be captured"
+		"description": "Notification when tab can't be captured"
+	},
+	
+	"noCaptureNotificationMessage2": {
+		"message": "The Filename is too long. It was cut",
+		"description": "Notification when FileName is too long"
 	},
 	
 	"menuLaunch": {
