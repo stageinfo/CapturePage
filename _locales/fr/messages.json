@@ -24,6 +24,16 @@
 		"description": "Notification message when tab can't be captured"
 	},
 	
+	"noCaptureNotificationTitle2": {
+		"message": "Nom du fichier trop long",
+		"description": "Notification title when FileName is too long"
+	},
+	
+	"noCaptureNotificationMessage2": {
+		"message": "Le nom du fichier est trop long. Il a été coupé",
+		"description": "Notification when FileName is too long"
+	},
+	
 	"menuLaunch": {
 		"message": "Capturer cette page",
 		"description": "Context Menu Title for capture a tab"
