@@ -194,7 +194,7 @@ function downloadPage(urlToDownload){
 	// Download the file with download() function of the downloads API
     	var dl = browser.downloads.download({
 		url : urlToDownload,
-		filename : folderChoiceItem + patternChoiceItem + "." + formatItem,
+		filename : fileName + "." + formatItem,
 		conflictAction : 'uniquify'
     	});
     	dl.then(onStartedDownload, onFailed);
